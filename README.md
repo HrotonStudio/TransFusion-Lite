@@ -1,7 +1,7 @@
 
 <h1 align = "center" > TransFusion Lite</h1>
 <p align = "center">一款通过调用翻译器 API 的多语言翻译器</p>
-**此项目已暂时停更**
+
 
 ## 为什么选择 TransFusion Lite
 
