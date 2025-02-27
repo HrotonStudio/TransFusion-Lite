@@ -1,4 +1,4 @@
-![ICON](/assets/icon.png #pic_center)
+![ICON](/assets/icon.png#pic_center)
 <h1 align = "center" > TransFusion Lite</h1>
 <p align = "center">一款通过调用翻译器 API 的多语言翻译器</p>
 > 此项目已暂时停更
