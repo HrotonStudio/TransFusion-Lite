@@ -1,0 +1,9 @@
+{
+    "baidu_appid": "", 
+    "baidu_secretKey": "", 
+    "xiaoniu_apikey": "", 
+    "caiyun_apikey": "", 
+    "deepseek_apikey": "",
+    "window_style": "MacOS",
+    "deepseek_model_r1": "False" 
+}
