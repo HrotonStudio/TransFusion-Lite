@@ -39,7 +39,7 @@ TransFusion Lite 通过调用各专业翻译器 API 进行翻译。
 
 1. 从右上角的“CODE”下载整个项目，可以使用git
 2. 下载python（教程自行网络查阅）
-	- 建议使用 Python 3.13ji 
+	- 建议使用 Python 3.13  
 	- 最低版本 Python 3.12
 	- **必须安装PIP**
 3. 安装完Python之后打开, 下载后的文件夹，打开cmd,输入如下指令
