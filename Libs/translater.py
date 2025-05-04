@@ -1,4 +1,17 @@
-import requests,json,hashlib,random,urllib,http.client,subprocess,sys
+import requests,json,hashlib,random,urllib,http.client
+
+'''
+翻译器主程序，针对不同翻译API都有不同的实现方法
+需要的参数：
+    query: 输入
+    Circuit：翻译引擎选择支持百度，小牛，彩云，deepseek
+    fromlang：源语言
+    tolang：目标语言
+返回值：
+    翻译结果
+    网站状态码
+⚠️翻译方式就需要填写自己的api密钥（自己申请
+'''
 
 def translate(query,Circuit,fromLang='en',toLang='zh'):
 
@@ -26,6 +39,7 @@ def translate(query,Circuit,fromLang='en',toLang='zh'):
         status_code = res.status_code
         return str(json_data['tgt_text']),status_code
     if Circuit == 'baidu':
+        # 百度翻译差评，这么多参数生怕我翻译成功
 
         httpClient = None
         myurl = '/api/trans/vip/translate'

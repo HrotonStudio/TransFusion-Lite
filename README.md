@@ -39,8 +39,8 @@ TransFusion Lite 通过调用各专业翻译器 API 进行翻译。
 
 1. 从右上角的“CODE”下载整个项目，可以使用git
 2. 下载python（教程自行网络查阅）
-	- 建议使用 Python 3.12
-	- 最低版本 Python 3.7
+	- 建议使用 Python 3.13ji 
+	- 最低版本 Python 3.12
 	- **必须安装PIP**
 3. 安装完Python之后打开, 下载后的文件夹，打开cmd,输入如下指令
 	`pip install -r requirements.txt`
@@ -48,5 +48,5 @@ TransFusion Lite 通过调用各专业翻译器 API 进行翻译。
 
 
 HrotonStudio
-2025-2-27
+2025-05-05
 
