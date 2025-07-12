@@ -1,4 +1,4 @@
-# 简单读取qss
+
 class QSSLoader:
     def __init__(self):
         pass

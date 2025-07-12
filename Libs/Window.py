@@ -11,19 +11,23 @@
 from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
     QMetaObject, QObject, QPoint, QRect,
     QSize, QTime, QUrl, Qt)
-from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
-    QFont, QFontDatabase, QGradient, QIcon,
-    QImage, QKeySequence, QLinearGradient, QPainter,
-    QPalette, QPixmap, QRadialGradient, QTransform)
+from PySide6.QtGui import (QAction, QBrush, QColor, QConicalGradient,
+    QCursor, QFont, QFontDatabase, QGradient,
+    QIcon, QImage, QKeySequence, QLinearGradient,
+    QPainter, QPalette, QPixmap, QRadialGradient,
+    QTransform)
 from PySide6.QtWidgets import (QApplication, QComboBox, QHBoxLayout, QLabel,
-    QMainWindow, QPushButton, QRadioButton, QSizePolicy,
-    QSpacerItem, QTextBrowser, QVBoxLayout, QWidget)
+    QMainWindow, QMenu, QMenuBar, QPushButton,
+    QRadioButton, QSizePolicy, QSpacerItem, QTextBrowser,
+    QVBoxLayout, QWidget)
+
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
         MainWindow.resize(540, 493)
+        MainWindow.setStyleSheet(u"background-color: rgb(255, 255, 255);")
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.verticalLayout = QVBoxLayout(self.centralwidget)
@@ -170,6 +174,19 @@ class Ui_MainWindow(object):
 
         MainWindow.setCentralWidget(self.centralwidget)
 
+        self.menuBar = QMenuBar(MainWindow)
+        self.menuBar.setObjectName(u"menuBar")
+        self.menuBar.setGeometry(QRect(0, 0, 540, 23))
+        self.menuabout = QMenu(self.menuBar)
+        self.menuabout.setObjectName(u"menuabout")
+        self.menuabout.setStyleSheet(u"font: 25 10pt \"Microsoft JhengHei UI Light\";")
+        self.menuoptions = QMenu(self.menuBar)
+        self.menuoptions.setObjectName(u"menuoptions")
+        MainWindow.setMenuBar(self.menuBar)
+
+        self.menuBar.addAction(self.menuoptions.menuAction())
+        self.menuBar.addAction(self.menuabout.menuAction())
+
         self.retranslateUi(MainWindow)
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -187,12 +204,14 @@ class Ui_MainWindow(object):
 
         self.label.setText(QCoreApplication.translate("MainWindow", u"\u8f93\u5165\u6587\u5b57:", None))
         self.label_5.setText(QCoreApplication.translate("MainWindow", u"\u8fd4\u56de\u72b6\u6001\u7801:", None))
-        self.label_2.setText(QCoreApplication.translate("MainWindow", u"\u7ffb\u8bd1\u6210\uff1a", None))
+        self.label_2.setText(QCoreApplication.translate("MainWindow", u"\u7ffb\u8bd1\u7ed3\u679c\uff1a", None))
         self.radioButton_baidu.setText(QCoreApplication.translate("MainWindow", u"\u767e\u5ea6\u7ffb\u8bd1", None))
         self.radioButton_xiaoniu.setText(QCoreApplication.translate("MainWindow", u"\u5c0f\u725b\u7ffb\u8bd1", None))
         self.radioButton_caiyun.setText(QCoreApplication.translate("MainWindow", u"\u5f69\u4e91\u7ffb\u8bd1", None))
         self.radioButton_deepseek.setText(QCoreApplication.translate("MainWindow", u"DeepSeek\u7ffb\u8bd1", None))
         self.pushButton_translate.setText(QCoreApplication.translate("MainWindow", u"\u7ffb\u8bd1", None))
         self.pushButton.setText(QCoreApplication.translate("MainWindow", u"\u590d\u5236", None))
+        self.menuabout.setTitle(QCoreApplication.translate("MainWindow", u"\u5173\u4e8e", None))
+        self.menuoptions.setTitle(QCoreApplication.translate("MainWindow", u"\u9009\u9879", None))
     # retranslateUi
 
