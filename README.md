@@ -1,9 +1,9 @@
 
-<h1 align = "center" > TransFusion Lite</h1>
-<p align = "center">一款通过调用翻译器 API 的多语言翻译器</p>
+<h1 align = "center" > TransFusion-Lite</h1>
+<p align = "center">一款通过调用多个翻译引擎API的多语言翻译器</p>
 
 
-## 为什么选择 TransFusion Lite
+## 为什么选择 TransFusion-Lite
 
 ### :fire:对接专业翻译 API
 
@@ -11,9 +11,9 @@ TransFusion Lite 通过调用各专业翻译器 API 进行翻译。
 
 ### :star:多种翻译方式
 
-因为 TransFusion Lite 通过调用翻译器的 API Key 进行翻译，用户可通过提供不同翻译器的 API 来使用多种不同翻译方式。
+因为 TransFusion-Lite 通过调用翻译器的 API Key 进行翻译，用户可通过提供不同翻译器的 API 来使用多种不同翻译方式。
 
-以下是目前 TransFusion Lite 支持调用的翻译器 API：
+以下是目前 TransFusion-Lite 支持调用的翻译器 API：
 
 - 百度翻译
 - 小牛翻译
@@ -22,7 +22,7 @@ TransFusion Lite 通过调用各专业翻译器 API 进行翻译。
 
 ### :white_check_mark:支持 DeepSeek 翻译
 
-只要用户提供 DeepSeek API Key，TransFusion Lite支持使用 DeepSeek v3 和 DeepSeek R1。
+只要用户提供 DeepSeek API Key，TransFusion-Lite支持使用 DeepSeek v3 和 DeepSeek R1。
 
 ### :star:可自定义风格
 
